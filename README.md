@@ -42,14 +42,13 @@ import 'package:positive_num/positive_num.dart';
 import 'package:positive_num/positive_num.dart';
 
 void main() {
-  var number = 1;
-  final result = PositiveNum.create(number);
-  if (result.instance != null) {
-    final positiveNum = result.instance!;
-    print('Created a PositiveNum instance with ${positiveNum.value} value.');
+  var someNumber = 1;
+  final (:error, :instance) = PositiveNum.create(someNumber);
+  if (instance != null) {
+    final positiveNum = instance;
+    print('Created a PositiveNum instance with value $positiveNum.');
   } else {
-    final error = result.error;
-    print('$error');
+    print(error);
   }
 }
 ```
