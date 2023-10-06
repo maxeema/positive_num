@@ -1,3 +1,7 @@
+## 1.0.7
+
+- Refactor/ use destructuring of records
+
 ## 1.0.6
 
 - Verify Github actions complete successfully when code is compiling
