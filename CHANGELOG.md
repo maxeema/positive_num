@@ -1,3 +1,11 @@
+## 1.0.6
+
+- Verify Github actions complete successfully when code is compiling
+
+## 1.0.5
+
+- Verify Github actions fail when code is not compiling
+
 ## 1.0.4
 
 - Configure the "publish" workflow to pub.dev
