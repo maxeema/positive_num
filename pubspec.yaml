@@ -1,6 +1,6 @@
 name: positive_num
 description: A value object that incapsulates a positive number that is greater than 0.
-version: 1.0.1
+version: 1.0.3
 repository: https://github.com/maxeema/positive_num
 
 environment:
