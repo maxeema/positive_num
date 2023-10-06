@@ -24,7 +24,7 @@ Define the package in pubspec.yaml at the dependencies section like that
 dependencies:
   positive_num:
     git:
-      url: https://github.com/maxeema/positive_int.git
+      url: https://github.com/maxeema/positive_num.git
 ```
 
 Then import it in your code.
@@ -60,6 +60,6 @@ void main() {
 > dart test
 
 
-## Author
+## Copyright
 
 © Max Shemetov, 2023, MIT License
