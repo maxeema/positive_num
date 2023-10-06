@@ -18,7 +18,10 @@ It respects both int and double values.</b>
 
 ### How to start using the package
 
-Define the package in pubspec.yaml at the dependencies section like that
+> dart pub add positive_num
+
+
+Or specify the package's git url in pubspec.yaml at the dependencies section like that
 
 ```
 dependencies:
