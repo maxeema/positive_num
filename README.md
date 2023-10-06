@@ -51,6 +51,10 @@ void main() {
 }
 ```
 
+## Before run
+
+> dart pub get
+
 ## Run example
 
 > dart run example/positive_num_example.dart
