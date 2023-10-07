@@ -26,10 +26,10 @@ void main() {
       }
     });
     test('Ensure that generic T has a proper type either int or double', () {
-      // ensure that the value have type of 'int'
+      // ensure that the value has type of 'int'
       int intValue = PositiveNum.create(1).instance!.value;
 
-      // ensure that the value have type of 'double'
+      // ensure that the value has type of 'double'
       double doubleValue = PositiveNum.create(1.0).instance!.value;
     });
     test('Ensure that "==" is overriden correctly', () {
