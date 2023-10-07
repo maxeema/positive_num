@@ -1,5 +1,5 @@
 name: positive_num
-description: A value object that incapsulates a positive number that is greater than 0.
+description: A value object that incapsulates a positive number in Dart.
 version: 1.0.7
 repository: https://github.com/maxeema/positive_num
 
