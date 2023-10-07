@@ -11,8 +11,8 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-<b>A value object that incapsulates a positive number that is greater than 0.
-It respects both int and double values.</b>
+<b>A value object that incapsulates a positive number in Dart.
+It respects both int and double types.</b>
 
 ## Getting started
 
@@ -43,12 +43,13 @@ import 'package:positive_num/positive_num.dart';
 
 void main() {
   var someNumber = 1;
+  //
   final (:error, :instance) = PositiveNum.create(someNumber);
   if (instance != null) {
     final positiveNum = instance;
     print('Created a PositiveNum instance with value $positiveNum.');
   } else {
-    print(error);
+    print('Error. $error');
   }
 }
 ```
@@ -68,4 +69,4 @@ void main() {
 
 ## Copyright
 
-© Max Shemetov, 2023, MIT License
+© Max Shemetov, 2023
