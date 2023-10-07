@@ -1,3 +1,7 @@
+## 1.0.7+1
+
+- Update project description, Readme, typos in test, text in example
+
 ## 1.0.7
 
 - Refactor/ use destructuring of records
