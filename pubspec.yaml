@@ -2,7 +2,7 @@ name: positive_num
 description: >-
   PositiveNum is an implementation of an immutable value object
   that encapsulates a positive number of type int or double.
-version: 1.0.8
+version: 1.0.8+1
 repository: https://github.com/maxeema/positive_num
 
 environment:

@@ -1,3 +1,7 @@
+## 1.0.8+1
+
+- Small update of the description in pubspec.yaml
+
 ## 1.0.8
 
 - Re-wrote the project description to more informative
