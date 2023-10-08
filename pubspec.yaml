@@ -6,7 +6,7 @@ description: >-
   PositiveNum guarantees that its value is always positive
   and can't be change after creation.
   PositiveNum can't be created with 0 or negative value.
-version: 1.0.7+1
+version: 1.0.8
 repository: https://github.com/maxeema/positive_num
 
 environment:

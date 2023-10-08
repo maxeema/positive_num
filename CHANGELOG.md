@@ -1,3 +1,10 @@
+## 1.0.8
+
+- Re-wrote the project description to more informative
+- Added 1 more test (to ensure that PositiveNum can be created from a reference with num, int, or double type)
+- Refactored tests (use final instead var, use const instead of final, rename elements)
+- Fixed typos
+
 ## 1.0.7+1
 
 - Update project description, Readme, typos in test, text in example
