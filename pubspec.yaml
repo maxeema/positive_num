@@ -1,5 +1,10 @@
 name: positive_num
-description: A value object that incapsulates a positive number in Dart.
+description: >-
+  The package contains a value object PositiveNum
+  that incapsulates a positive number which
+  can have int or double.
+  An PositiveNum instance gurantees that it holds
+  a positive number, otherwise it can't be instantiated.
 version: 1.0.7+1
 repository: https://github.com/maxeema/positive_num
 
