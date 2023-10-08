@@ -11,8 +11,13 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-<b>A value object that incapsulates a positive number in Dart.
-It respects both int and double types.</b>
+
+  The package contains an immutable value object
+  called <b>PositiveNum</b> that encapsulates a positive number
+  (any number greater than 0) which can be int or double.
+  PositiveNum guarantees that its value is always positive
+  and can't be change after creation.
+  PositiveNum can't be created with 0 or negative value.
 
 ## Getting started
 

@@ -1,10 +1,11 @@
 name: positive_num
 description: >-
-  The package contains a value object PositiveNum
-  that encapsulates a positive number which
-  can have int or double.
-  An PositiveNum instance guarantees that it holds
-  a positive number, otherwise it can't be instantiated.
+  The package contains an immutable value object
+  called PositiveNum that encapsulates a positive number
+  (any number greater than 0) which can be int or double.
+  PositiveNum guarantees that its value is always positive
+  and can't be change after creation.
+  PositiveNum can't be created with 0 or negative value.
 version: 1.0.7+1
 repository: https://github.com/maxeema/positive_num
 
