@@ -13,7 +13,7 @@ void example1() {
   final (:error, :instance) = PositiveNum.create(someNumber);
   if (instance != null) {
     final positiveNum = instance;
-    print('Created a PositiveNum instance with value $positiveNum.');
+    print('Created a PositiveNum instance with $positiveNum value.');
   } else {
     print('Error. $error');
   }
@@ -29,7 +29,7 @@ void example2() {
     switch (PositiveNum.create(n)) {
       case (:String? error, :PositiveNum instance):
         final positiveNum = instance;
-        print('SUCCESS [try $n] PositiveNum created with value $positiveNum.');
+        print('SUCCESS [try $n] PositiveNum created with $positiveNum value.');
         break;
       case (:String error, :PositiveNum? instance):
         print('FAILURE [try $n] PositiveNum was not created. $error');
