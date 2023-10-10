@@ -1,3 +1,7 @@
+## 2.0.1
+
+- mark constructors as const following Dart best practices
+
 ## 2.0.0
 
 - Added PositiveInt and PositiveDouble classes which are final and can't be extended or implemented.
