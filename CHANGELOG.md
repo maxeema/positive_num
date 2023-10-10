@@ -1,3 +1,10 @@
+## 2.0.0
+
+- Added PositiveInt and PositiveDouble classes which are final and can't be extended or implemented.
+- PositiveNum marked as sealed now
+- PositiveNum.create() now is a factory that creates either PositiveInt or PositiveDouble.
+- Updated tests, documentation, description, and example
+
 ## 1.0.8+1
 
 - Small update of the description in pubspec.yaml

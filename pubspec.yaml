@@ -1,8 +1,8 @@
 name: positive_num
 description: >-
-  PositiveNum is an implementation of an immutable value object
-  that encapsulates a positive number of type int or double.
-version: 1.0.8+1
+  An implementation of immutable value objects PositiveInt and PositiveDouble
+  that encapsulate a positive number of type int or double.
+version: 2.0.0
 repository: https://github.com/maxeema/positive_num
 
 environment:
