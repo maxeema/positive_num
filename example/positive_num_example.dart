@@ -1,39 +1,47 @@
+/// © Max Shemetov, 2023
+
 // ignore_for_file: unused_local_variable
 
 import 'package:positive_num/positive_num.dart';
 
-void main() {
-  example1();
-  example2();
-}
-
-void example1() {
-  var someNumber = 1;
-  //
-  final (:error, :instance) = PositiveNum.create(someNumber);
+void examplePositiveInt(int someNumber) {
+  final (:error, :instance) = PositiveInt.create(someNumber);
   if (instance != null) {
-    final positiveNum = instance;
-    print('Created a PositiveNum instance with $positiveNum value.');
+    final positiveInt = instance;
+    print('Created a PositiveInt, value: $positiveInt');
   } else {
     print('Error. $error');
   }
 }
 
-void example2() {
-  const nums1 = [-5, -5.0, -0.001, -0.0, 0.0, 0];
-  const nums2 = [0.1, 1, 999999];
-  const nums3 = [double.nan, double.negativeInfinity];
-  const nums4 = [double.minPositive, double.maxFinite, double.infinity];
-  //
-  for (final n in [...nums1, ...nums2, ...nums3, ...nums4]) {
-    switch (PositiveNum.create(n)) {
-      case (:String? error, :PositiveNum instance):
-        final positiveNum = instance;
-        print('SUCCESS [try $n] PositiveNum created with $positiveNum value.');
-        break;
-      case (:String error, :PositiveNum? instance):
-        print('FAILURE [try $n] PositiveNum was not created. $error');
-        break;
-    }
+void examplePositiveDouble(double someNumber) {
+  final result = PositiveDouble.create(someNumber);
+  if (result.instance != null) {
+    final positiveDouble = result.instance!;
+    print('Created a PositiveDouble, value: $positiveDouble');
+  } else {
+    print('Error. ${result.error}');
   }
+}
+
+void examplePositiveNum(num someNumber) {
+  switch (PositiveNum.create(someNumber)) {
+    case (:String? error, :PositiveNum instance):
+      final positiveNum = instance;
+      print('Created a PositiveNum, value: $positiveNum');
+      break;
+    case (:String error, :PositiveNum? instance):
+      print('Error. $error');
+      break;
+  }
+}
+
+void main() {
+  examplePositiveInt(1);
+  examplePositiveDouble(2.2);
+  examplePositiveNum(3);
+  //
+  examplePositiveInt(-1);
+  examplePositiveDouble(-2.2);
+  examplePositiveNum(-3);
 }

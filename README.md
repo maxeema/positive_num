@@ -12,12 +12,13 @@ and the Flutter guide for
 -->
 
 
-  The package contains an immutable value object
-  called <b>PositiveNum</b> that encapsulates a positive number
-  (any number greater than 0) which can be int or double.
-  PositiveNum guarantees that its value is always positive
-  and can't be change after creation.
-  PositiveNum can't be created with 0 or negative value.
+  The package contains immutable value objects
+  <b>PositiveInt</b> and <b>PositiveDouble</b>
+  that encapsulate a positive number (any number greater than 0)
+  which can be <b>int</b> or <b>double</b>.
+  The value objects guarantee that their value is always positive
+  and can't be changed after creation.
+  They can't be created with 0 or a negative value.
 
 ## Getting started
 
@@ -26,7 +27,7 @@ and the Flutter guide for
 > dart pub add positive_num
 
 
-Or specify the package's git url in pubspec.yaml at the dependencies section like that
+Or specify the package's git url in pubspec.yaml at the dependencies section.
 
 ```
 dependencies:
@@ -49,10 +50,10 @@ import 'package:positive_num/positive_num.dart';
 void main() {
   var someNumber = 1;
   //
-  final (:error, :instance) = PositiveNum.create(someNumber);
+  final (:error, :instance) = PositiveInt.create(someNumber);
   if (instance != null) {
-    final positiveNum = instance;
-    print('Created a PositiveNum instance with value $positiveNum.');
+    final positiveInt = instance;
+    print('Created a PositiveInt, value: $positiveInt');
   } else {
     print('Error. $error');
   }
